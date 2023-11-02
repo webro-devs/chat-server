@@ -8,6 +8,7 @@ import { ChannelModule } from './modules/channel/channel.module';
 import { ContactModule } from './modules/contact/contact.module';
 import { WebsocketModule } from './modules/websocket/websocket.module';
 import { PrismaModule } from './modules/prisma/prisma.module';
+import { AuthModule } from './modules/auth/auth.module';
 
 @Module({
   imports: [
@@ -20,6 +21,7 @@ import { PrismaModule } from './modules/prisma/prisma.module';
     ContactModule,
     WebsocketModule,
     PrismaModule,
+    AuthModule,
   ],
   controllers: [],
   providers: [],

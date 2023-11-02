@@ -16,9 +16,11 @@ model Message {
   id    Int     @id @default(autoincrement())
   text  String?
 }
-
 model User {
-  id    Int     @id @default(autoincrement())
-  email String  @unique
+  id String @id @default(uuid())
+  phone String  @unique
+  username String @unique
   name  String?
+  bio String?
+  isOnline Boolean @default(true)
 }
