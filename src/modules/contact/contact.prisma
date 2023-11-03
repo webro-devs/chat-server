@@ -1,0 +1,4 @@
+
+model Contact {
+  id String @id @default(uuid())
+}

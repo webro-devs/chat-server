@@ -1,0 +1,4 @@
+
+model Folder {
+  id String @id @default(uuid())
+}
